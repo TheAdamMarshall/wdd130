@@ -1,0 +1,205 @@
+
+@font-face{
+    font-family: orientalchicken;
+    src: url(../fonts/OrientalChicken.ttf);
+}
+body{
+    background: url(../images/background.png);
+}
+#wrapper {
+    border: 10px solid #efdecd;
+    margin: 200px auto;
+    width: 1024px;
+    border-radius: 20px;
+    background-color: maroon;
+    padding: 10px;
+}
+h1 {
+    font-family: orientalchicken;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+section{
+    width: 398px;
+    height: 398px;
+    padding: 8px;
+    border: 12px solid lime;
+    justify-self: right;
+    /*box-sizing:border-box;*/
+    margin: 30px;
+/*
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 0px 20px 67px;
+    */
+
+    float: left;
+    margin: 30px 0px 20px 67px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header img {
+    float: left;
+}
+header h1{
+   align-self: center;
+   justify-self: celf;
+}
+header {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+nav {
+    background: #ffffff;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px;
+    list-style-type: none;
+    margin: 0;
+    justify-content: space-evenly;
+}
+nav li {
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px 67px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 2.5px 2.5px black;
+    background: #98b759;
+}
+
+#contact{
+    width: 200px;
+    min-height: 200px;
+    border: solid #0455ff 15px;
+    padding: 12px;
+    background: #448800;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transition: height 8.5s ease-in;
+}
+#contact:hover{
+    transition: height 8.5s ease-out;
+    height: 400px;
+}
+#contact form{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 10px;
+}
+.stretch{
+    columns: 1-3;
+}
+footer {
+    clear: both;
+}
+
+table.steelBlueCols {
+  border: 4px solid #555555;
+  background-color: #555555;
+  width: 400px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.steelBlueCols td, table.steelBlueCols th {
+  border: 1px solid #555555;
+  padding: 5px 10px;
+}
+table.steelBlueCols tbody td {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.steelBlueCols td:nth-child(even) {
+  background: #398AA4;
+}
+table.steelBlueCols thead {
+  background: #398AA4;
+  border-bottom: 10px solid #398AA4;
+}
+table.steelBlueCols thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  border-left: 2px solid #398AA4;
+}
+table.steelBlueCols thead th:first-child {
+  border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+table.steelBlueCols tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #398AA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        width: 100%;
+        margin: unset;
+    }
+    header {
+        display: block;
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: unset;
+    }
+    header img {
+        display: none;
+    }
+    nav a{
+        padding: 0 30%;
+    }
+    #contact {
+        position: unset;
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+    nav ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 50px);
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main section {
+        width: 100%;
+        height: 100%;;
+    }
+    section {
+        width: auto;
+        height: auto;
+        margin: 20px;
+        float: none;
+    }
+}
+section img{
+    max-width: 100%;
+    max-height: auto;
+}
