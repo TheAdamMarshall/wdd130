@@ -3,6 +3,9 @@ max-width: 1600px;
 margin: 0 auto;
 text-align: center;
 }
+#img1 {
+    width: 100%;
+}
 #background {
     height: 725px;
     background-color:aqua;
