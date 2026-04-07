@@ -140,13 +140,17 @@ footer{
     align-items: center;
 }
 
+#cla {
+    color: whitesmoke;
+}
 
-
-
-
-
-
-
+#cldiv {
+    background-color: #181206;
+    border: 5px solid #2e1b08;
+    padding: 0px 20px 20px 20px;
+    color: whitesmoke;
+    margin: 40px;
+}
 
 
 
@@ -156,6 +160,9 @@ footer{
 /* HOVER EFFECTS */
 /* h1, a, section, p, li */
 h1:hover {
+    font-family: "StarJedi";
+}
+h2:hover {
     font-family: "StarJedi";
 }
 a:hover {
@@ -168,5 +175,8 @@ p:hover {
     font-family: "Sterilict";
 }
 li:hover {
+    font-family: "Sterilict";
+}
+#cla:hover {
     font-family: "Sterilict";
 }
